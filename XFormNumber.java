@@ -9,7 +9,7 @@ public class XFormNumber {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter square matrix limit: ");
 		int rc = sc.nextInt();
-		int mid = (rc + 1) / 2;
+		int mid = (rc / 2) + 1;
 
 		for (int r = 1; r <= rc; r++) {
 			for (int c = 1; c <= rc; c++) {
