@@ -13,6 +13,8 @@ public class DownsideRightTriangle {
 			for (int c = 1; c <= rc; c++) {
 				if ((r + c) >= rc + 1)
 					System.out.print("*");
+				else
+					System.out.print(" ");
 			}
 			System.out.println();
 		}
