@@ -11,7 +11,7 @@ public class RightsideUpBorderTriangle {
 
 		for (int r = 1; r <= rc; r++) {
 			for (int c = 1; c <= rc; c++) {
-				if (r == c || r == 1 || c == 5)
+				if (r == c || r == 1 || c == rc)
 					System.out.print("* ");
 			}
 			System.out.println();
