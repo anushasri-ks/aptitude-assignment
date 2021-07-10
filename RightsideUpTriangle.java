@@ -13,9 +13,9 @@ public class RightsideUpTriangle {
 		for (int r = 1; r <= rc; r++) {
 			for (int c = 1; c <= rc; c++) {
 				if (r <= c)
-					System.out.print("*");
+				    System.out.print("*");
 				else
-					System.out.print(" ");
+				    System.out.print(" ");
 			}
 			System.out.println();
 		}
