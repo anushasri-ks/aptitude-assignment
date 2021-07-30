@@ -2,7 +2,7 @@ package com.xworkz.aptitudeclass.assignment4;
 
 import java.util.Scanner;
 
-public class ReverseWord {
+public class StringPalindrome {
 
 	public static void main(String[] args) {
 
@@ -17,6 +17,9 @@ public class ReverseWord {
 				revWord += str.charAt(j);
             }
 		}
-		System.out.print("Reversed string : "+revWord);
+		if(str.equals(revWord))
+			System.out.println(str+" is a palindrome");
+		else
+			System.out.println(str+" is not a palindrome");
     }
 }

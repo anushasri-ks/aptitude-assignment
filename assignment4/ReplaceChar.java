@@ -10,19 +10,17 @@ public class ReplaceChar {
 		String str = sc.nextLine();
 		char[] charArr = str.toCharArray();
 		System.out.println("Enter a character you want to replace :");
-		
 		char oldChar = sc.next().charAt(0);
 		System.out.println("Enter a character to be replaced with :");
 		char newChar = sc.next().charAt(0);
+		String s = "";
+		System.out.println("Replaced character '"+oldChar+"' with '"+newChar+"'");
 		for (int i = 0; i < charArr.length; i++) {
 			if (charArr[i] == oldChar) {
 				charArr[i] = newChar;
 			}
+			s += charArr[i];
 		}
-		System.out.println("Replaced character '"+oldChar+"' with '"+newChar+"'");
-		for (int i = 0; i < charArr.length; i++) {
-			System.out.print(charArr[i]);
-		}
+		System.out.print(s);
 	}
-
 }
