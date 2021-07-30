@@ -7,16 +7,12 @@ public class ReverseWord {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a word :");
+		System.out.println("Enter a string/word :");
 		String str = sc.nextLine();
-		char[] charArr = str.toCharArray();
-		String revWord = "";
-		
-		for (int i = 0; i < 1; i++) {
-			for (int j = charArr.length - 1; j >= 0; j--) {
-				revWord += str.charAt(j);
-            }
+		String revStr = "";
+		for (int j = str.length() - 1; j >= 0; j--) {
+			revStr += str.charAt(j);
 		}
-		System.out.print("Reversed string : "+revWord);
-    }
+		System.out.print("Reversed string : " + revStr);
+	}
 }

@@ -14,13 +14,12 @@ public class ReplaceChar {
 		System.out.println("Enter a character to be replaced with :");
 		char newChar = sc.next().charAt(0);
 		String s = "";
-		System.out.println("Replaced character '"+oldChar+"' with '"+newChar+"'");
 		for (int i = 0; i < charArr.length; i++) {
 			if (charArr[i] == oldChar) {
 				charArr[i] = newChar;
 			}
 			s += charArr[i];
 		}
-		System.out.print(s);
+		System.out.print("Replaced '" + oldChar + "' with '" + newChar + "' : " + s);
 	}
 }

@@ -9,15 +9,12 @@ public class CountNoOfWords {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string :");
 		String str = sc.nextLine();
-		char[] charArr = str.toCharArray();
-		char c = ' ';
 		int count = 0;
-		for (int i = 0; i < charArr.length; i++) {
-			if (charArr[i] == c) {
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ' ') {
 				count++;
 			}
 		}
-		System.out.println("Count of words in String");
-		System.out.println(count + 1);
+		System.out.println("Count of words in String = "+(count + 1));
 	}
 }
