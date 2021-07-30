@@ -8,15 +8,15 @@ public class CountSpecificChar {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string :");
-		String str = sc.nextLine(); // harsha
+		String str = sc.nextLine();
 		System.out.println("Enter a character :");
-		char c = sc.next().charAt(0); // a
+		char c = sc.next().charAt(0);
 		int count = 0;
 		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) == c) { // h != a // a == a // r != a // s != a // h != a // a == a
-				count++; // 1+1
+			if (str.charAt(i) == c) {
+				count++;
 			}
 		}
-		System.out.println("Count of character'" + c + "' in given String\n"+count);
+		System.out.println("Count of character'" + c + "' in given String = " + count);
 	}
 }
