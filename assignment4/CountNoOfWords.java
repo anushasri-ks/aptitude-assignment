@@ -9,9 +9,10 @@ public class CountNoOfWords {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a string :");
 		String str = sc.nextLine();
+		str = str.trim();
 		int count = 0;
 		for (int i = 0; i < str.length(); i++) {
-			if (str.charAt(i) == ' ') {
+			if (str.charAt(i) == ' ' && str.charAt(i - 1) != ' ') {
 				count++;
 			}
 		}
