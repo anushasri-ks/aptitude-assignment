@@ -1,10 +1,13 @@
-package com.xworkz.aptitudeclass.assignment6;
+package com.xworkz.aptitudeclass.assignment;
+
+import java.util.Scanner;
 
 public class PalindromeNumber {
 
 	public static void main(String[] args) {
-
-		int num = 545;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter a number : ");
+		int num = sc.nextInt();
 		int temp = checkPalindrome(num, 0);
 
 		if (temp == num)
